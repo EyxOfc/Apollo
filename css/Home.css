@@ -1,0 +1,7 @@
+#Home{
+    padding: 5px 0px;
+    background-image: url('./../img/Background/Home.png');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}

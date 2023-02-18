@@ -62,3 +62,13 @@ body header .Button img{
     width: auto;
     height: 35px;
 }
+
+@font-face {
+    font-family: 'Base';
+    src: url('../Fontes/Base.otf');
+}
+
+@font-face {
+    font-family: 'Sora';
+    src: url('../Fontes/Sora.ttf');
+}

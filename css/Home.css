@@ -1,35 +1,31 @@
 #Home{
-    padding: 5px 0px;
+    padding: 10px 5px;
     background: linear-gradient(77deg, #000000e6 9.89%, rgba(0, 0, 0, 0) 139.46%), url('../img/Background/Home.png');
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 15px 10px;
     gap: 10px;
     overflow: hidden;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 }
 
 #Home h1{
     font-family: 'Base';
-    color: #fff;
-    margin: 2.5px 0px;
+    font-size: 1.5rem;
 }
 
 #Home p{
-    width: 300px;
     font-family: 'Sora';
-    font-style: normal;
-    font-weight: 400;
+    text-align: center;
+    line-height: 1.6;
+    letter-spacing: .1px;
     font-size: .7rem;
-    line-height: 1.2rem;
-    text-align: justify;
-    letter-spacing: -0.005em;
-    color: #FFFFFF;
-    margin: 2.5px 0px;
+    width: 290px;
 }
 
 #Home button{
@@ -44,5 +40,46 @@
     justify-content: center;
     background-color: #fff;
     border: none;
-    margin: 2.5px 0px;
+}
+
+@media (min-width: 1023px) {
+}
+
+@media (min-width: 767px) {
+
+    #Home {
+        padding: 20px 25px;
+        gap: 15px
+    }
+
+    #Home h1{
+        font-size: 3.5rem;
+    }
+
+    #Home p {
+        text-align: justify;
+        font-size: 1.2rem;
+        width: 500px;
+    }
+
+    #Home button{
+        font-size: 1.8rem;
+        width: 230px;
+        height: 55px;
+    }
+
+}
+
+@media (min-width: 424px) {
+}
+
+@media (min-width: 374px) {
+    #Home{
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    #Home p {
+        text-align: justify;
+    }
 }

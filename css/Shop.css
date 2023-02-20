@@ -18,6 +18,7 @@
 
 #Shop article{
     height: auto;
+    padding: 10px 0px;
     width: 100%;
     margin: 5px 0px 10px 0px;
     overflow: hidden;
@@ -27,10 +28,13 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-start;
+    border-radius: 2px;
 }
 
 #Shop article .Produto{
-    width: 230px;
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
     height: 140px;
     display: flex;
     flex-flow: column nowrap;
@@ -44,6 +48,9 @@
     scroll-snap-stop: always;
 }
 
+#Shop article .Produto:last-child {
+    margin: 0px;
+}
 
 #Shop article .Produto button{
     transition: .3s !important;
@@ -66,18 +73,19 @@
 #Shop article .Produto h2{
     font-family: Base;
     font-size: 1rem;
-    width: 220px;
+    width: 100%;
     letter-spacing: 1.5px;
     margin: 2.5px auto;
     color: #fff;
 }
 
 #Shop article .Produto p{
+    text-align: justify;
     font-family: Sora;
     font-size: .55rem;
     line-height: 1rem;
     height: 75px;
-    width: 220px;
+    width: 100%;
     margin: 2.5px auto;
     color: #fff;
 }
@@ -87,39 +95,47 @@
 
 @media (min-width: 767px) {
 
-    #Home {
+    #Shop {
         padding: 20px 25px;
-        gap: 15px
     }
 
-    #Home h1{
+    #Shop h1{
         font-size: 3.5rem;
     }
 
-    #Home p {
-        text-align: justify;
-        font-size: 1.2rem;
-        width: 500px;
+    #Shop article {
+        border-radius: 10px;
     }
 
-    #Home button{
-        font-size: 1.8rem;
-        width: 230px;
-        height: 55px;
+    #Shop article .Produto {
+        height: 250px;
+        width: 450px;
+        max-width: 450px;
+        min-width: 450px;
+        border-radius: 10px;
+        padding: 10px 10px;
     }
 
+    #Shop article .Produto h2 {
+        font-size: 2rem;
+    }
+
+    #Shop article .Produto p {
+        font-size: 1rem;
+        height: 120px;
+    }
+
+    #Shop article .Produto button{
+        top: 5px;
+        right: 5px;
+        padding: 8px 40px;
+        border-radius: 5px;
+        font-size: 1.4rem;
+    }
 }
 
 @media (min-width: 424px) {
 }
 
 @media (min-width: 374px) {
-    #Home{
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    #Home p {
-        text-align: justify;
-    }
 }

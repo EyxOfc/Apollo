@@ -4,7 +4,6 @@
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    gap: 10px;
     overflow: hidden;
     width: 100%;
     color: #fff;
@@ -17,6 +16,7 @@
 #Home h1{
     font-family: 'Base';
     font-size: 1.5rem;
+    margin: 10px 0px 5px 0px;
 }
 
 #Home p{
@@ -26,9 +26,11 @@
     letter-spacing: .1px;
     font-size: .7rem;
     width: 290px;
+    margin: 5px 0px 10px 0px;
 }
 
 #Home button{
+    transition: .3s !important;
     font-family: 'Base';
     font-size: 1rem;
     height: 35px;
@@ -40,6 +42,12 @@
     justify-content: center;
     background-color: #fff;
     border: none;
+    margin: 10px 0px 5px 0px;
+}
+
+#Home button:hover{
+    background-color: #100E0E;
+    color: #fff;
 }
 
 @media (min-width: 1023px) {

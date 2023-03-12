@@ -1,0 +1,63 @@
+#Diferenciais {
+    height: auto;
+    width: 100%;
+    padding: 15px 5px;
+    background-color: #fff;
+    background-image: linear-gradient(77deg, #000000e6 9.89%, rgba(0, 0, 0, 0) 139.46%), url('./../img/Background/Diferenciais.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#Diferenciais .Diferencial {
+    height: 120px;
+    width: 300px;
+    background-color: #fff1;
+    backdrop-filter: blur(1.5px);
+    margin: 5px auto;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border-left: 2px solid #fff;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    transition: .3s ease-in-out !important;
+}
+
+#Diferenciais .Diferencial:hover {
+    backdrop-filter: blur(3px);
+    background-color: #fff2;
+}
+
+#Diferenciais .Diferencial h1 {
+    font-family: Base;
+    letter-spacing: 1.5px;
+    color: #fff;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    width: 100%;
+}
+
+#Diferenciais .Diferencial p{
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 400;
+    font-size: .7rem;
+    line-height: 11px;
+    color: #fff;
+}
+
+@media (min-width: 767px) {
+    #Diferenciais .Diferencial {
+        zoom: 2;
+    }
+}

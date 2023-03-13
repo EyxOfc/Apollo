@@ -18,9 +18,9 @@
     align-items: center;
     justify-content: flex-start;
     gap: 5px;
-    padding: 0px 5px;
     overflow: scroll;
     border-radius: 5px;
+    scroll-snap-type: x mandatory;
 }
 
 #Cortes article .Corte {
@@ -39,6 +39,7 @@
     background-position: center center;
     background-size: cover;
     border-radius: 5px;
+    scroll-snap-align: start;
 }
 
 #Cortes article .Corte h2 {

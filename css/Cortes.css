@@ -1,17 +1,18 @@
-#Shop {
+#Cortes {
     height: auto;
     width: 100%;
     overflow: hidden;
-    padding: 10px 5px;
+    padding: 10px;
 }
 
-#Shop h1 {
+#Cortes h1 {
     font-family: Base;
     margin: 10px 5px;
     width: 100%;
 }
 
-#Shop article {
+#Cortes article {
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -20,10 +21,9 @@
     padding: 0px 5px;
     overflow: scroll;
     border-radius: 5px;
-    scroll-snap-type: x mandatory;
 }
 
-#Shop article .Produto {
+#Cortes article .Corte {
     width: 100%;
     min-width: 295px;
     max-width: 295px;
@@ -39,17 +39,16 @@
     background-position: center center;
     background-size: cover;
     border-radius: 5px;
-    scroll-snap-align: start;
 }
 
-#Shop article .Produto h2 {
+#Cortes article .Corte h2 {
     font-family: Base;
     width: 100%;
     font-size: 1.2rem;
     font-weight: 100;
 }
 
-#Shop article .Produto p {
+#Cortes article .Corte p {
     height: 82px;
     font-family: Sora;
     font-size: .7rem;
@@ -57,7 +56,7 @@
     font-weight: 100;
 }
 
-#Shop article .Produto button {
+#Cortes article .Corte button {
     width: 100px;
     height: 35px;
     background-color: #fff2;
@@ -72,7 +71,7 @@
     transition: .3s ease-in-out !important;
 }
 
-#Shop article .Produto button:hover {
+#Cortes article .Corte button:hover {
     border-left: 2px solid #fff;
     backdrop-filter: blur(8px);
 }

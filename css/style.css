@@ -74,6 +74,38 @@ body header .Button img{
     height: 35px;
 }
 
+body footer {
+  padding: 5px 10px;
+  background-color: #100E0E;
+}
+
+body footer > p {
+  font-family: Sora;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  font-size: .8rem;
+  margin: 10px auto;
+}
+
+body footer > p > span{
+  font-weight: 100;
+}
+
+body footer > p.Center{
+  justify-content: center;
+  gap: 8px;
+}
+
+body footer > p.Center a{
+  color: #fff;
+  text-decoration: none;
+  font-style: italic;
+}
+
 @media (min-width: 1023px) {
 }
 

@@ -17,7 +17,7 @@
     flex-flow: row nowrap;
     align-items: center;
     justify-content: flex-start;
-    gap: 5px;
+    gap: 10px;
     overflow: scroll;
     border-radius: 5px;
     scroll-snap-type: x mandatory;
@@ -75,4 +75,15 @@
 #Cortes article .Corte button:hover {
     border-left: 2px solid #fff;
     backdrop-filter: blur(8px);
+}
+
+@media (min-width: 767px) {
+
+    #Cortes article h1 {
+        zoom: 1.1;
+    }
+
+    #Cortes article .Corte {
+        zoom: 1.1;
+    }
 }

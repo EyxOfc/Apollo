@@ -78,9 +78,6 @@
 
 }
 
-@media (min-width: 424px) {
-}
-
 @media (min-width: 374px) {
     #Home{
         align-items: flex-start;

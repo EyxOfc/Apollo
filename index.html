@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/Shop.css">
     <link rel="stylesheet" href="./css/Diferenciais.css">
     <link rel="stylesheet" href="./css/Cortes.css">
+    <link rel="stylesheet" href="./css/Aba.css">
     <title>Apollo Barbearia</title>
 </head>
 <body>
@@ -16,10 +17,19 @@
     <header>
         <img src="./img/Icon.png" alt="Icon" class="Icon">
 
-        <button type="submit" class="Button">
+        <button type="submit" class="Button" onclick='AbrirAba()'>
             <img src="./img/Menu.png" alt="Icon Menu">
         </button>
     </header>
+
+    <div id="Aba">
+        
+            <a href="#Home" onclick="FecharAba()">Home</a>
+            <a href="#Shop" onclick="FecharAba()">Shop</a>
+            <a href="#Cortes" onclick="FecharAba()">Cortes</a>
+            <a href="#Diferenciais" onclick="FecharAba()">Diferenciais</a>
+            
+    </div>
 
     <section id="Home">
 
@@ -158,8 +168,8 @@
 
         <p class="Center">copyright <a href="https://eyxcode.netlify.app" target="_blank">Eyx</a> 2023 ©</p>
     </footer>
-    
 
-
+    <script src="./js/AbrirAba.js"></script>
+    <script src="./js/FecharAba.js"></script>
 </body>
 </html>
